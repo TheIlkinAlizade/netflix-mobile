@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "expodemo",
+    "slug": "expodemo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Montserrat-Light.ttf",
+            "./assets/fonts/Montserrat-LightItalic.ttf",
+            "./assets/fonts/Montserrat-Regular.ttf",
+            "./assets/fonts/Montserrat-Medium.ttf",
+            "./assets/fonts/Montserrat-SemiBold.ttf",
+            "./assets/fonts/Montserrat-Bold.ttf"
+          ]
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "IP_URL": "http://10.0.2.2:5001/api/v1",
+      "Base_Image_URL": "https://image.tmdb.org/t/p/original"
+    }
+  }
+}
